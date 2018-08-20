@@ -103,7 +103,7 @@ of your choosing and a default database named _gis_.
 After logging in into your AMI Linux instance connect to PostgreSQL
 
 ```
-$ psql -U postgres -H <your-server-zone>.rds.amazon.com gis
+$ psql -U postgres -h <your-server-zone>.rds.amazon.com gis
 ```
 
 In the psql terminal follow the PostGIS set up instructions accordingly to your
