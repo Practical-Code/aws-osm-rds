@@ -1,18 +1,15 @@
 ﻿# Setting Up OpenStreetMap Tile Server with Official Styles on AWS EC2 with PostgreSQL RDS and PostGIS
-These are some notes on setting up OpenStreetMap tile server with official OSM
-styles on an Amazon EC2 instance with a PostgreSQL RDS instance supporting PostGIS.
+These are some notes on setting up an Amazon EC2 instance with a PostgreSQL 
+RDS instance supporting PostGIS.
 
 These notes will cover some technical details of the AWS EC2 + RDS stack,
 that are omitted or not present in the guides at https://switch2osm.org
-
-_NOTE:_ This is written after the fact, I may have forgotten or omitted something
-by accident.
 
 ## Overview
 
 ### AWS Setup Overview
 * Amazon Linux AMI https://aws.amazon.com/amazon-linux-ami/2015.03-release-notes/
-* m3.medium instance with 60G General Purpose SSD + 1 Elastic IP
+* t2.medium instance with 60G General Purpose SSD
 * PostgreSQL RDS m3.medium instance with (default) 100G storage + PostGIS 2.1.5
 
 ### Setting Up the EC2 Instance
