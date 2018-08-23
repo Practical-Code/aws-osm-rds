@@ -29,15 +29,8 @@ be able to access it over SSH.
 
 First, enable the EPEL repository for extra packages:
 ```
-$ sudo yum-config-manager --enable epel 
+$ sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm 
 ```
-
-To make life easier on the command line install [byobu](https://en.wikipedia.org/wiki/Byobu_\(software\))
-and to be able to clone required OpenStreetMap software later, also install git
-```
-$ sudo yum install byobu git
-```
-
 Additional packages are required for building and configuring the OpenStreetMap
 software stack. Some of the packages listed below will trigger additional dependencies
 that are also to be installed.
@@ -47,7 +40,7 @@ $ sudo yum install \
   autoconf automake boost boost-devel \ 
   bzip2-devel cairo cairo-devel \
   cjkuni-fonts-common gcc gcc-c++ \ 
-  gdal gdal-devel geos-devel \
+  git byobu gdal gdal-devel geos-devel \
   httpd httpd-devel libcurl-devel libicu-devel \ 
   libjpeg-turbo-devel libtiff-devel libtool \
   libuv libuv-devel libxml2-devel lua-devel \
