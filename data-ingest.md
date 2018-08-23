@@ -46,36 +46,19 @@ software stack. Some of the packages listed below will trigger additional depend
 that are also to be installed.
 ```
 $ sudo yum install \
-  apr apr-devel \
-  apr-util apr-util-devel \
-  autoconf automake \
-  boost boost-devel \
-  bzip2 bzip2-devel \
-  cairo cairo-devel \
-  cjkuni-fonts-common \
-  freetype-devel \
-  gcc gcc-c++ \
-  gdal gdal-devel \
-  geos geos-devel \
-  httpd24 httpd24-devel \
-  libcurl libucrl-devel \
-  libicu libicu-devel \
-  libjpeg-turbo libjpeg-turbo-devel \
-  libpng libpng-devel \
-  libtiff libtiff-devel \
-  libtool \
-  libuv libuv-devel \
-  libxml libxml-devel \
-  lua lua-devel \
-  mod24_ssl \
-  nodejs npm \ 
-  ogdi \
-  postgresql93 postgresql93-contrib postgresql93-devel postgresql93-libs postgresql93-server \
-  proj proj-devel \
-  protobuf protobuf-c protobuf-c-devel protobuf-compiler protobuf-devel \
-  python27 python27-PyYAML python27-pycairo python27-pycairo-devel \
-  sqlite sqlite-devel \
-  zlib zlib-devel
+  apr apr-devel apr-util apr-util-devel \ 
+  autoconf automake boost boost-devel \ 
+  bzip2-devel cairo cairo-devel \
+  cjkuni-fonts-common gcc gcc-c++ \ 
+  gdal gdal-devel geos-devel \
+  httpd httpd-devel libcurl-devel libicu-devel \ 
+  libjpeg-turbo-devel libtiff-devel libtool \
+  libuv libuv-devel libxml2-devel lua-devel \
+  mod_ssl nodejs npmpostgresql postgresql-contrib \
+  postgresql-devel postgresql-libs postgresql-server \ 
+  proj-devel protobuf protobuf-c protobuf-c-devel \
+  protobuf-compiler protobuf-devel pycairo pycairo-devel \
+  sqlite-devel harfbuzz harfbuzz-devel
 ```
 
 Phew, one last package, install [CartoCSS](https://github.com/mapbox/carto) which
